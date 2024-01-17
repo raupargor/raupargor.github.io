@@ -1,8 +1,5 @@
-# Restaurant Landing Page
+Holi, mira que chulo!
 
-- Used bootstrap tools & own styles.
-- Implemented responsive template.
-
-👉🏻 [Demo](https://yaninatrekhleb.github.io/restaurant-website/)
+👉🏻 [Demo](https://raupargor.github.io/)
 
 ![Demo](img/demo.gif)
