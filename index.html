@@ -1,18 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+  <script src="js/scripts.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function() {
+    filtrarObjetos('2023');
+  });</script>
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+ 
     <link rel="stylesheet" href="index.css">
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <title>🦕<i class="bi bi-heart-fill blue"></i>🐢</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>🦕&🐢</title>
   </head>
   <body>
-    
-    
+     
   <nav>
     <ul class="nav-flex-row">
       <li class="nav-item">
@@ -34,26 +44,30 @@
         <a href="#reir">Agradecer</a>
       </li>      
       <li class="nav-item">
-        <a href="#reir">Proximamente...</a>
+        <a href="#proximamente">Proximamente...</a>
       </li>
     </ul>
   </nav>
 
   <section class="section-intro">
     <header>
-      <h1>🦕<i class="bi bi-heart-fill blue"></i>🐢</h1>
+      <h1>🦕<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-heart-fill blue" viewBox="0 0 16 15">
+        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314"/>
+      </svg></i>🐢</h1>
     </header>
-    <div class="link-to-year-wrapper">      
-      <form class="media-centered"> 
-        <a type="submit" class="btn btn-primary">2024</a>
-      </form>
+    <div class="btn-group btn-group-toggle spaced" >
+      <button class="btn btn-primary" onclick="filtrarObjetos('TODO')">TODO</button>
+      <button class="btn btn-primary" onclick="filtrarObjetos('2023')">2023</button>
+      <button class="btn btn-primary" onclick="filtrarObjetos('2024')">2024</button>
+      <!-- <button class="btn btn-primary" onclick="filtrarObjetos('2025')">2025</button> -->
     </div>
-  </section>
+  <div id="result"></div>
 
-  <section class="about-section" id="ser">
+  </section>
+  <section class="about-section section 2023" id="ser">
     <article>
       <h3>
-          Aquí se guardan los tesoros mas bonitos que comparto contigo 
+          2023 Aquí se guardan los tesoros mas bonitos que comparto contigo 
       </h3>
       <p>
         Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
@@ -68,17 +82,35 @@
       </p>
     </article>
   </section>
-
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <section class="about-section section 2024" id="ser">
+    <article>
+      <h3>
+          2024 Aquí se guardan los tesoros mas bonitos que comparto contigo 
+      </h3>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        A quos, voluptatum illum mollitia dolores libero placeat 
+        nesciunt quasi adipisci impedit!Lorem ipsum dolor sit, 
+        amet consectetur adipisicing elit. 
+        A quos, voluptatum illum mollitia dolores libero placeat 
+        nesciunt quasi adipisci impedit!
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+        A quos, voluptatum illum mollitia dolores libero placeat 
+        nesciunt quasi adipisci impedit!Lorem ipsum dolor sit.
+      </p>
+    </article>
+  </section>
+  <section class="section 2024" id="estar">
+  <div id="carouselExampleControls" class="carousel slide 2023" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="img/desktop-wallpaper-blue-sky-blue-sky-pinterest-co-uk-blue-sky.jpg" class="d-block w-100" alt="food">
+        <img src="img/desktop-wallpaper-blue-sky-blue-sky-pinterest-co-uk-blue-sky.jpg" class="d-block w-100">
       </div>
       <div class="carousel-item">
-        <img src="img/desktop-wallpaper-blue-sky-blue-sky-pinterest-co-uk-blue-sky.jpg" class="d-block w-100" alt="food">
+        <img src="img/demo.gif" class="d-block w-100">
       </div>
       <div class="carousel-item">
-        <img src="img/desktop-wallpaper-blue-sky-blue-sky-pinterest-co-uk-blue-sky.jpg" class="d-block w-100" alt="food">
+        <img src="img/gato.webp" class="d-block w-100">
       </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
@@ -90,6 +122,7 @@
       <span class="sr-only">Cojone</span>
     </a>
   </div>
+</section>
 
   <div class="container">
     <div class="row-flex">
@@ -105,7 +138,7 @@
           </div>
           <div class="form-group">
             <input type="number" class="form-control" id="exampleInputphoneNumber1" placeholder="Escribe tu nombre completo">
-          </div>
+          </div><br>
           <button type="submit" class="btn btn-primary">Suscribirse</button> <!--- easter egg de bsito si se suscribe -->
       </form>
       </div>
@@ -114,9 +147,12 @@
           Horario de tu novio
         </h3>
         <p>
-         <span>Lunes—Jueves: 08:00 — 07:59 (aunque hay que ir al gym)</span> 
-         <span>Viernes—Sábado: 07:00 — 24:00 (necesito dormir)</span>
-         <span>Domingo: 10:00 — 24:00 (tengo fútbol)</span>
+         <span>Lunes—Jueves:</bold> 08:00 07:59 <br>
+          (aunque hay que ir al gym)</span>
+         <span>Viernes—Sábado: 07:00 24:00 <br>
+          (necesito dormir)</span>
+         <span>Domingo: 10:00 24:00 <br>
+          (tengo fútbol)</span>
         </p>
       </div>
       <div class="contact-adress">
@@ -134,16 +170,6 @@
       </div>
     </div>
     </div>
-
-
-
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
- 
   </body>
   
 </html> 
