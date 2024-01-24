@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Big+Shoulders+Text:100,300,400,500,600,700,800,900&display=swap');
 
-
 .blue {
     color:rgb(122, 205, 253)
 }
@@ -8,7 +7,7 @@
 .spaced{
     padding: 20px;
 }
-
+/* necesario para filtrar años */
 .section{
     display:none;
 }
@@ -17,37 +16,16 @@
     display: block;
 }
 
-.backgroundblue{
-    background-color:#f3f3f3c0;
-    width: 100%;
-    height: auto;
-    margin-top: -15rem;
-    
+.D23 .section{
+    background-image: url(../img/desktop-wallpaper-blue-sky-blue-sky-pinterest-co-uk-blue-sky.jpg);
 }
-/* font-family: 'Big Shoulders Text', cursive; */
 
-.nav-flex-row {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    position: absolute;
-    z-index: 100;
-    left: 0;
-    width: 100%;
-    padding: 0;
+.D24 .section{
+    background-image: url(../img/gato.webp);
 }
-.nav-flex-row li {
+.section-intro a{
+    color: inherit; 
     text-decoration: none;
-    list-style-type: none;
-    padding: 20px 15px;
-}
-
-.nav-flex-row li a {
-    font-family: 'Big Shoulders Text', cursive;
-    color: #ffffff;
-    font-size: 1.5em;
-    text-transform: uppercase;
-    font-weight: 300;
 }
 
 .section-intro {
@@ -74,57 +52,70 @@
     align-items: center;
 }
 
-.link-to-book-wrapper {
-    flex: 1;
-}
-
-.title-section {
+.content-section {
     align-items: center;
-    background-color: #f3f3f3c0;
+    background-color:rgb(122, 205, 253);
+
+}
+.content-section p{
+    text-align: center;
+    width: 60%;
+    height: 100%;
     margin: auto;
+    font-family: 'Big Shoulders Text', cursive;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top:5rem;
+    padding-bottom:48.3rem;
+    display: flex; 
+    position: relative;
+}
+.content-section-image{
+    background-color:rgba(122, 205, 253, 0.712);
+    width: 100%;
+    position: absolute;
+
+    border-top-style: solid;
+    border-color: #ffffff;
+}
+.nav-flex-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+}
+.nav-flex-row li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 20px 15px;
 }
 
-.about-section {
-    align-items: center;
-    background-color: #f3f3f3c0;
-    padding: 50px 30px;
+.nav-flex-row li a {
+    font-family: 'Big Shoulders Text', cursive;
+    color: #ffffff;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: 300;
 }
 
-.link-to-book {
+.link-color-white {
     color: #ffffff;
     display: block;
     border: 2px solid #ffffff;
     padding: 5px 10px;
 }
+.link-color-black{
+    color: #000000;
+    display: block;
+    text-decoration: none;
 
-a.link-to-book:hover {
+}
+a.link-color-white:hover {
     background-color: #ffffff;
     color: #95999e;
     text-decoration: none;
-}
-.title-section p,
-.title-section h3 {
-    text-align: center;
-    width: 60%;
-    margin: auto;
-    font-family: 'Big Shoulders Text', cursive;
-    font-size: 1.8em;
-    text-transform: uppercase;
-    position: sticky;
-
-}
-
-.about-section p,
-.about-section h3 {
-    text-align: center;
-    width: 60%;
-    margin: auto;
-    font-family: 'Big Shoulders Text', cursive;
-    font-size: 1.8em;
-    text-transform: uppercase;
-    font-weight: bold;
-
-    position: sticky;
 }
 
 .carousel-inner {
@@ -158,7 +149,7 @@ a.link-to-book:hover {
     background-color:rgb(122, 205, 253)
 
 }
-.opening-time,
+.boyfriend-schedule,
 .contact-adress {
     flex: 1;
     margin: 30px 20px;
@@ -169,8 +160,90 @@ a.link-to-book:hover {
     font-size: 1.2em;
 }
 
-.opening-time p span,
+.boyfriend-schedule p span,
 .contact-adress p span {
     display: block;
 }
 
+@media (max-width: 800px) {
+    .carousel-section{
+        padding-top: 3rem;
+
+    }
+    .nav-flex-row {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        position: absolute;
+        z-index: 100;
+        left: 0;
+        width: 100%;
+        padding: 0;
+    }
+    .nav-flex-row li {
+        text-decoration: none;
+        list-style-type: none;
+        padding: 15px 5px;
+    }
+    
+    .nav-flex-row li a {
+        font-family: 'Big Shoulders Text', cursive;
+        color: #ffffff;
+        font-size: 1em;
+        text-transform: uppercase;
+        font-weight: 300;
+    }
+
+    .section-intro {
+        height: 100%;
+    }
+    .section-intro h1{
+        text-align: center;
+        color: #ffffff;
+        font-size: 24px;
+        width:"25" ;
+        height:"200";
+    }
+    .section-intro .blue{
+        width:"100"; height:"50";
+    }
+    .content-section {
+        align-items: center;
+        background-color:rgb(122, 205, 253);
+    
+    }
+    .content-section p{
+        text-align: center;
+        width: 80%;
+        height: 100%;
+        margin: auto;
+        font-family: 'Big Shoulders Text', cursive;
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: bold;
+        padding-top:1rem;
+        padding-bottom:1.9rem;
+        display: flex; 
+        position: relative;
+    }
+    .content-section-image{
+        background-color:rgba(122, 205, 253, 0.712);
+        width: 100%;
+        position: absolute;
+    
+        border-top-style: solid;
+        border-color: #ffffff;
+    }
+
+    .carousel-inner {
+        height: auto;
+    }
+
+    .row-flex {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* @media screen and (max-width: 576px) {
+ } */
